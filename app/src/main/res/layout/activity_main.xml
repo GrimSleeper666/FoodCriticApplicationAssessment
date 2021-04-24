@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Insert New Rating "
+        android:textSize="30dp"
+        tools:visibility="visible"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/foodItemInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:hint="Food Item"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodItemInput"
+        android:hint="Price {£}"
+        android:inputType="numberDecimal"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceInput"
+        android:hint="Description"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/restaurantInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionInput"
+        android:hint="Restaurant"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ratingInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantInput"
+        android:hint="Rating 0 - 10"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ratingDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingInput"
+        android:hint="Date Of Rating"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/addToDbButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingDateInput"
+        android:layout_marginTop="30dp"
+        android:text="ADD"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addToDbButton"
+        android:layout_marginTop="30dp"
+        android:text="DELETE"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteButton"
+        android:layout_marginTop="30dp"
+        android:text="update"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateButton"
+        android:layout_marginTop="30dp"
+        android:text="View Database"
+        android:textSize="24dp" />
+
+</RelativeLayout>
