@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String foodItemText = foodItemInput.getText().toString();
+                String priceInputText = priceInput.getText().toString();
                 String descriptionText = descriptionInput.getText().toString();
                 String restaurantText = restaurantInput.getText().toString();
                 String ratingText = ratingInput.getText().toString();

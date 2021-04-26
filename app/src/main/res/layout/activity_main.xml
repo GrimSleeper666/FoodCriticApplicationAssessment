@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity"
     tools:visibility="visible">
 
@@ -13,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Insert New Rating "
+        android:textAlignment="center"
         android:textSize="30dp"
-        tools:visibility="visible"
-        android:textAlignment="center"/>
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/foodItemInput"
@@ -24,6 +25,7 @@
         android:layout_below="@+id/title"
         android:hint="Food Item"
         android:inputType="text"
+        android:layout_marginTop="10dp"
         android:textSize="20dp" />
 
     <EditText
@@ -33,6 +35,7 @@
         android:layout_below="@+id/foodItemInput"
         android:hint="Price {£}"
         android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
         android:textSize="20dp" />
 
     <EditText
@@ -42,6 +45,7 @@
         android:layout_below="@+id/priceInput"
         android:hint="Description"
         android:inputType="text"
+        android:layout_marginTop="10dp"
         android:textSize="20dp" />
 
     <EditText
@@ -51,6 +55,7 @@
         android:layout_below="@+id/descriptionInput"
         android:hint="Restaurant"
         android:inputType="text"
+        android:layout_marginTop="10dp"
         android:textSize="20dp" />
 
     <EditText
@@ -60,6 +65,7 @@
         android:layout_below="@+id/restaurantInput"
         android:hint="Rating 0 - 10"
         android:inputType="text"
+        android:layout_marginTop="10dp"
         android:textSize="20dp" />
 
     <EditText
@@ -76,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ratingDateInput"
-        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
         android:text="ADD"
         android:textSize="24dp" />
 
@@ -85,7 +91,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addToDbButton"
-        android:layout_marginTop="30dp"
         android:text="DELETE"
         android:textSize="24dp" />
 
@@ -94,7 +99,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/deleteButton"
-        android:layout_marginTop="30dp"
         android:text="update"
         android:textSize="24dp" />
 
@@ -103,7 +107,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/updateButton"
-        android:layout_marginTop="30dp"
         android:text="View Database"
         android:textSize="24dp" />
 
